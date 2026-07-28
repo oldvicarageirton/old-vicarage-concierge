@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#071b2b">
+  <meta name="theme-color" content="#10272a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>The Old Vicarage · Guest Concierge</title>
-  <meta name="description" content="The digital guest concierge for The Old Vicarage, Irton.">
+  <meta name="description" content="Your beautifully curated guide to The Old Vicarage, Irton and the Western Lakes.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
@@ -20,166 +20,109 @@
     </a>
     <button class="menu-button" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="menu" aria-label="Main navigation">
-      <a href="#enjoy">Enjoy the house</a>
-      <a href="#stay">Your stay</a>
-      <a href="#explore">Explore</a>
-      <a href="#help">Help</a>
+      <a href="#welcome">Welcome</a><a href="#enjoy">The house</a><a href="#explore">Explore</a><a href="#stay">Your stay</a><a href="#help">Help</a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero" aria-label="Welcome">
-      <img src="assets/images/aerial.webp" alt="Aerial view of The Old Vicarage and surrounding countryside">
+    <section id="home" class="hero" aria-label="Welcome to The Old Vicarage">
+      <img class="hero-image" src="assets/images/exterior.webp" alt="The Old Vicarage, Irton">
       <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="kicker">Welcome to Irton</p>
-        <h1>Your stay starts here.</h1>
-        <p>A beautiful Victorian country house, made for memorable gatherings on the western edge of the Lake District.</p>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Irton · Western Lake District</p>
+        <h1>Welcome to<br>The Old Vicarage.</h1>
+        <p class="hero-lead">A remarkable country house for gathering, celebrating and discovering the quieter side of the Lakes.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#enjoy">Discover the house</a>
-          <a class="button glass" href="#stay">Start your stay</a>
+          <a class="button primary" href="#welcome">Start your stay</a>
+          <a class="button glass" href="#explore">Explore the Western Lakes</a>
         </div>
       </div>
-      <a class="scroll-cue" href="#quick">Explore ↓</a>
+      <a class="scroll-cue" href="#welcome" aria-label="Scroll to welcome"><span></span>Discover</a>
     </section>
 
-    <section id="quick" class="quick-actions section-shell" aria-label="Quick actions">
-      <a href="#wifi"><span>◉</span><strong>Wi‑Fi</strong><small>Get connected</small></a>
-      <a href="#cinema"><span>▶</span><strong>Cinema</strong><small>Watch the guide</small></a>
-      <a href="#departure"><span>✓</span><strong>Departure</strong><small>Before 10:00</small></a>
-      <a href="#help"><span>☎</span><strong>Need help?</strong><small>Contacts & emergencies</small></a>
+    <section id="welcome" class="welcome-panel section-shell section-space reveal">
+      <div class="welcome-copy">
+        <p class="eyebrow dark">Your stay, beautifully guided</p>
+        <h2>Make yourself completely at home.</h2>
+        <p>We have brought the useful details, room guides and our favourite local discoveries together in one place. Everything important is only a couple of taps away.</p>
+        <p class="signature">Phil &amp; Claire</p>
+      </div>
+      <div class="quick-grid" aria-label="Quick actions">
+        <a href="#wifi"><span class="quick-icon">◉</span><strong>Connect to Wi‑Fi</strong><small>Network details</small></a>
+        <a href="#cinema"><span class="quick-icon">▶</span><strong>Set up the cinema</strong><small>Video guide</small></a>
+        <a href="#explore"><span class="quick-icon">⌁</span><strong>Plan a day out</strong><small>Our local favourites</small></a>
+        <a href="#departure"><span class="quick-icon">✓</span><strong>Departure guide</strong><small>Easy checklist</small></a>
+      </div>
+    </section>
+
+    <section class="statement-image reveal">
+      <img src="assets/images/aerial.webp" alt="The Old Vicarage surrounded by fields and countryside">
+      <div><p class="eyebrow">Space to reconnect</p><h2>Country-house character.<br>Contemporary comfort.</h2></div>
     </section>
 
     <section id="enjoy" class="section-shell section-space">
-      <div class="section-heading">
-        <p class="kicker">Enjoy the house</p>
-        <h2>Everything you need, in a couple of taps.</h2>
-        <p>Tap a space to see its quick-start guide. The three videos you supplied are already included.</p>
+      <div class="section-heading reveal">
+        <p class="eyebrow dark">Discover the house</p>
+        <h2>Every room has its moment.</h2>
+        <p>Tap a guide whenever you need it, then get back to enjoying your stay.</p>
       </div>
-
-      <div class="feature-grid">
-        <article id="cinema" class="feature-card feature-card--wide dark-card">
-          <img src="assets/images/cinema.webp" alt="The cinema room with tiered seating and ambient lighting">
-          <div class="feature-overlay"></div>
-          <div class="feature-copy">
-            <p class="kicker">Movie night</p>
-            <h3>Cinema room</h3>
-            <p>Projector, surround sound and lighting — explained in one short video.</p>
-            <button class="button primary play-video" data-video="assets/videos/cinema-room.mp4" data-title="Cinema room quick start">▶ Watch setup guide</button>
-          </div>
+      <div class="experience-grid">
+        <article id="cinema" class="experience experience-wide cinematic reveal">
+          <img src="assets/images/cinema.webp" alt="Cinema room with tiered seating and ambient lighting">
+          <div class="experience-shade"></div>
+          <div class="experience-copy"><p class="eyebrow">Movie night</p><h3>Cinema room</h3><p>Projector, sound and lighting in one short guide.</p><button class="button primary play-video" data-video="assets/videos/cinema-room.mp4" data-title="Cinema room quick start">▶ Watch setup guide</button></div>
         </article>
-
-        <article class="feature-card">
-          <img src="assets/images/hot-tub.webp" alt="The hot tub with water jets and two glasses beside it">
-          <div class="feature-copy on-light">
-            <p class="kicker">Unwind</p>
-            <h3>Hot tub & courtyard</h3>
-            <p>Relax in the sunken hot tub, then gather around the fire pit as evening falls.</p>
-            <span class="coming">Guide coming next</span>
-          </div>
-        </article>
-
-        <article class="feature-card">
-          <img src="assets/images/coffee-lounge.webp" alt="The coffee lounge with sofas, balcony doors and coffee bar">
-          <div class="feature-copy on-light">
-            <p class="kicker">Take a moment</p>
-            <h3>Coffee lounge</h3>
-            <p>A quiet corner for coffee, music, games or a glass of something chilled.</p>
-            <button class="text-button play-video" data-video="assets/videos/coffee-machine.mp4" data-title="Coffee machine instructions">Watch coffee machine guide →</button>
-          </div>
-        </article>
-
-        <article class="feature-card">
-          <img src="assets/images/living-room.webp" alt="The main living room with velvet sofas and open fire">
-          <div class="feature-copy on-light">
-            <p class="kicker">Gather together</p>
-            <h3>Living room & piano</h3>
-            <p>Settle by the fire and let the self-play piano provide the soundtrack.</p>
-            <button class="text-button play-video" data-video="assets/videos/piano.mp4" data-title="Piano instructions">Watch piano guide →</button>
-          </div>
-        </article>
-
-        <article class="feature-card">
-          <img src="assets/images/kitchen.webp" alt="The large kitchen island and breakfast seating">
-          <div class="feature-copy on-light">
-            <p class="kicker">Cook & celebrate</p>
-            <h3>Kitchen</h3>
-            <p>Generous space, modern appliances and everything needed to cater for the whole group.</p>
-            <span class="coming">Appliance guides coming soon</span>
-          </div>
-        </article>
+        <article class="experience reveal"><img src="assets/images/hot-tub.webp" alt="Hot tub in the private courtyard"><div class="experience-shade"></div><div class="experience-copy"><p class="eyebrow">Slow down</p><h3>Hot tub &amp; courtyard</h3><p>Warm water, open sky and evenings around the fire.</p><span class="soft-link">Guide coming soon</span></div></article>
+        <article class="experience reveal"><img src="assets/images/coffee-lounge.webp" alt="Coffee lounge"><div class="experience-shade"></div><div class="experience-copy"><p class="eyebrow">A quiet corner</p><h3>Coffee lounge</h3><p>Start slowly with freshly made coffee.</p><button class="soft-link play-video" data-video="assets/videos/coffee-machine.mp4" data-title="Coffee machine instructions">Watch the coffee guide →</button></div></article>
+        <article class="experience reveal"><img src="assets/images/living-room.webp" alt="Living room with open fire"><div class="experience-shade"></div><div class="experience-copy"><p class="eyebrow">Come together</p><h3>Living room &amp; piano</h3><p>Fireside conversations with music on request.</p><button class="soft-link play-video" data-video="assets/videos/piano.mp4" data-title="Piano instructions">Watch the piano guide →</button></div></article>
+        <article class="experience reveal"><img src="assets/images/kitchen.webp" alt="Large kitchen island"><div class="experience-shade"></div><div class="experience-copy"><p class="eyebrow">Cook &amp; celebrate</p><h3>Kitchen &amp; dining</h3><p>Made for long breakfasts and memorable dinners.</p><span class="soft-link">Appliance guides coming soon</span></div></article>
       </div>
     </section>
 
-    <section class="gallery-strip" aria-label="Property highlights">
-      <img src="assets/images/dining-room.webp" alt="The dining table set for a group meal">
-      <img src="assets/images/bedroom.webp" alt="A luxurious bedroom with a freestanding bath">
-      <img src="assets/images/play-area.webp" alt="Children's play area in the garden">
-      <img src="assets/images/courtyard.webp" alt="Stone courtyard and outdoor seating">
+    <section id="explore" class="explore-section section-space">
+      <div class="section-shell">
+        <div class="section-heading light reveal"><p class="eyebrow">Beyond the gates</p><h2>Explore the Western Lakes.</h2><p>Six places we think deserve a place in your stay. Tap any card to open the official guide in a new tab.</p></div>
+        <div class="filter-row reveal" aria-label="Filter recommendations">
+          <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="family">Family days</button><button class="filter" data-filter="walks">Walks</button><button class="filter" data-filter="coast">Coast</button><button class="filter" data-filter="adventure">Adventure</button>
+        </div>
+        <div class="explore-grid">
+          <a class="destination destination-wide reveal" data-category="family walks" href="https://lakedistrict.gov.uk/explore/places-to-go/explore-wasdale-wastwater-and-west-coast/" target="_blank" rel="noopener">
+            <img src="assets/images/explore/wasdale-wastwater.webp" alt="Wastwater surrounded by dramatic Lake District fells"><div class="destination-shade"></div><div class="destination-copy"><p>Landscape · Walks</p><h3>Wasdale &amp; Wastwater</h3><span>Explore the valley →</span></div>
+          </a>
+          <a class="destination reveal" data-category="family" href="https://www.muncaster.co.uk/" target="_blank" rel="noopener"><img src="assets/images/explore/muncaster-castle.webp" alt="Aerial view of Muncaster Castle and gardens"><div class="destination-shade"></div><div class="destination-copy"><p>Family day out</p><h3>Muncaster Castle</h3><span>Plan your visit →</span></div></a>
+          <a class="destination reveal" data-category="family" href="https://ravenglass-railway.co.uk/" target="_blank" rel="noopener"><img src="assets/images/explore/ravenglass-railway.webp" alt="Aerial view of Ravenglass and its railway station"><div class="destination-shade"></div><div class="destination-copy"><p>Heritage railway</p><h3>Ravenglass &amp; Eskdale Railway</h3><span>View timetable →</span></div></a>
+          <a class="destination reveal" data-category="coast family" href="https://www.thebeachguide.co.uk/north-west-england/cumbria/seascale.htm" target="_blank" rel="noopener"><img src="assets/images/explore/seascale-beach.webp" alt="Seascale Beach looking across the Irish Sea"><div class="destination-shade"></div><div class="destination-copy"><p>Coast · Sunset</p><h3>Seascale Beach</h3><span>View beach guide →</span></div></a>
+          <a class="destination reveal" data-category="walks adventure" href="https://lakedistrict.gov.uk/explore/things-to-do/walking/walking-routes/scafell-pike/" target="_blank" rel="noopener"><img src="assets/images/explore/scafell-pike.webp" alt="Rocky mountain scenery around Scafell Pike"><div class="destination-shade"></div><div class="destination-copy"><p>Challenging mountain day</p><h3>Scafell Pike</h3><span>Plan the walk →</span></div></a>
+          <a class="destination destination-wide reveal" data-category="walks adventure" href="https://lifehop.co.uk/wasdale-emerald-pool/" target="_blank" rel="noopener"><img src="assets/images/explore/emerald-pool.webp" alt="Clear emerald mountain pool and waterfalls in Wasdale"><div class="destination-shade"></div><div class="destination-copy"><p>Adventure · Wild landscape</p><h3>Wasdale Emerald Pool</h3><span>Read the guide →</span></div></a>
+        </div>
+        <p class="safety-note reveal"><strong>A gentle reminder:</strong> conditions in the fells and water can change quickly. Please check current guidance, weather and your group’s ability before setting out.</p>
+      </div>
     </section>
 
     <section id="stay" class="section-shell section-space">
-      <div class="section-heading">
-        <p class="kicker">Your stay</p>
-        <h2>The useful bits, beautifully organised.</h2>
-      </div>
+      <div class="section-heading reveal"><p class="eyebrow dark">The useful details</p><h2>Your stay, beautifully organised.</h2></div>
       <div class="info-grid">
-        <article id="wifi" class="info-card accent-card">
-          <p class="icon">◉</p><h3>Wi‑Fi</h3>
-          <p>The house has ultrafast broadband. Keep the network name and password on the iPad only rather than publishing them on this public website.</p>
-          <div class="private-detail"><span>Network</span><strong>Add locally on iPad</strong></div>
-          <div class="private-detail"><span>Password</span><strong>Private</strong></div>
-        </article>
-        <article class="info-card"><p class="icon">⌂</p><h3>House essentials</h3><ul><li>No smoking or vaping indoors.</li><li>Dogs must remain downstairs and off soft furnishings.</li><li>Use plastic glasses around the hot tub.</li><li>Please report breakages promptly.</li></ul></article>
-        <article class="info-card"><p class="icon">♨</p><h3>Heating & hot water</h3><p>The house uses a modern biomass and smart thermostat system. A detailed guide will sit here once the heating video is ready.</p></article>
-        <article class="info-card"><p class="icon">⚡</p><h3>EV charging</h3><p>Electric vehicle charging is available at the property. A simple start/stop guide can be added here.</p></article>
+        <article id="wifi" class="info-card accent-card reveal"><p class="info-icon">◉</p><h3>Wi‑Fi</h3><p>Keep the network and password on the property iPad rather than publishing private details online.</p><div class="private-detail"><span>Network</span><strong>Add locally on iPad</strong></div><div class="private-detail"><span>Password</span><strong>Private</strong></div></article>
+        <article class="info-card reveal"><p class="info-icon">⌂</p><h3>House essentials</h3><ul><li>No smoking or vaping indoors.</li><li>Dogs remain downstairs and off furnishings.</li><li>Use plastic glasses around the hot tub.</li><li>Please report breakages promptly.</li></ul></article>
+        <article class="info-card reveal"><p class="info-icon">♨</p><h3>Heating &amp; hot water</h3><p>A detailed guide will appear here once the heating video is ready.</p></article>
+        <article class="info-card reveal"><p class="info-icon">⚡</p><h3>EV charging</h3><p>Electric vehicle charging is available. A quick-start guide can be added next.</p></article>
       </div>
     </section>
 
     <section id="departure" class="departure section-space">
       <div class="section-shell departure-inner">
-        <div class="section-heading light-heading"><p class="kicker">Before you leave</p><h2>Departure checklist</h2><p>Check-out is by 10:00. Tick each item as you go — your progress is saved on this device.</p></div>
-        <div class="checklist" id="checklist">
-          <label><input type="checkbox"><span>Put waste and recycling in the outside bins.</span></label>
-          <label><input type="checkbox"><span>Place used bedding and towels in the laundry bags.</span></label>
-          <label><input type="checkbox"><span>Close all windows.</span></label>
-          <label><input type="checkbox"><span>Load and start the dishwasher.</span></label>
-          <label><input type="checkbox"><span>Turn off lights and check for belongings.</span></label>
-          <label><input type="checkbox"><span>Lock the house and return the key as instructed.</span></label>
+        <div class="section-heading light reveal"><p class="eyebrow">Before you leave</p><h2>Departure checklist</h2><p>Check-out is by 10:00. Your progress is saved on this device.</p></div>
+        <div class="checklist reveal" id="checklist">
+          <label><input type="checkbox"><span>Put waste and recycling in the outside bins.</span></label><label><input type="checkbox"><span>Place used bedding and towels in the laundry bags.</span></label><label><input type="checkbox"><span>Close all windows.</span></label><label><input type="checkbox"><span>Load and start the dishwasher.</span></label><label><input type="checkbox"><span>Turn off lights and check for belongings.</span></label><label><input type="checkbox"><span>Lock the house and return the key as instructed.</span></label>
         </div>
       </div>
     </section>
 
-    <section id="explore" class="section-shell section-space">
-      <div class="section-heading"><p class="kicker">Explore the western Lakes</p><h2>Big landscapes, quiet beaches and memorable days out.</h2></div>
-      <div class="recommend-grid">
-        <article><span>01</span><h3>Wast Water</h3><p>Dramatic scenery, lakeside walks and a classic view into the fells.</p></article>
-        <article><span>02</span><h3>Muncaster Castle</h3><p>Historic rooms, gardens, woodland and family-friendly attractions.</p></article>
-        <article><span>03</span><h3>Ravenglass & Eskdale Railway</h3><p>A memorable narrow-gauge railway journey through the Eskdale landscape.</p></article>
-        <article><span>04</span><h3>Drigg & Seascale</h3><p>Wide beaches for fresh air, picnics and sunsets over the Irish Sea.</p></article>
-      </div>
-    </section>
-
-    <section id="help" class="help section-space">
-      <div class="section-shell help-inner">
-        <div><p class="kicker">Need a hand?</p><h2>We are here when you need us.</h2><p>Host phone numbers and access codes should remain off the public website. Add them directly to the property iPad or place them behind a private guest page later.</p></div>
-        <div class="help-card"><strong>Emergency</strong><p>Call 999 for police, fire, ambulance or coastguard where there is immediate danger.</p><hr><strong>Property</strong><p>The Old Vicarage<br>Irton, Holmrook<br>Cumbria CA19 1YH</p></div>
-      </div>
-    </section>
+    <section id="help" class="help section-space"><div class="section-shell help-inner reveal"><div><p class="eyebrow dark">Need a hand?</p><h2>We are here when you need us.</h2><p>Host phone numbers and access codes should remain on the property iPad or behind a private guest page.</p></div><div class="help-card"><strong>Emergency</strong><p>Call 999 for police, fire, ambulance or coastguard where there is immediate danger.</p><hr><strong>Property</strong><p>The Old Vicarage<br>Irton, Holmrook<br>Cumbria CA19 1YH</p></div></div></section>
   </main>
 
-  <nav class="bottom-nav" aria-label="iPad quick navigation">
-    <a href="#home"><span>⌂</span>Home</a>
-    <a href="#enjoy"><span>◇</span>House</a>
-    <a href="#explore"><span>⌁</span>Explore</a>
-    <a href="#help"><span>☎</span>Help</a>
-  </nav>
-
-  <dialog id="videoDialog" class="video-dialog">
-    <div class="video-dialog-bar"><h2 id="videoTitle">Video guide</h2><button id="closeVideo" aria-label="Close video">×</button></div>
-    <video id="guideVideo" controls playsinline preload="metadata"></video>
-  </dialog>
-
+  <nav class="bottom-nav" aria-label="iPad quick navigation"><a href="#home"><span>⌂</span>Home</a><a href="#enjoy"><span>◇</span>House</a><a href="#explore"><span>⌁</span>Explore</a><a href="#help"><span>☎</span>Help</a></nav>
+  <dialog id="videoDialog" class="video-dialog"><div class="video-dialog-bar"><h2 id="videoTitle">Video guide</h2><button id="closeVideo" aria-label="Close video">×</button></div><video id="guideVideo" controls playsinline preload="metadata"></video></dialog>
   <footer><img src="assets/logo.jpg" alt=""><p>The Old Vicarage · Irton</p><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>

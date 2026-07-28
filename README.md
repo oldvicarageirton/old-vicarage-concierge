@@ -1,19 +1,8 @@
-# The Old Vicarage Guest Concierge — Version 2
+# The Old Vicarage Guest Concierge — Version 3
 
-A touch-friendly digital concierge designed for the property iPad and guests' phones.
+A premium, touch-friendly guest concierge for The Old Vicarage, Irton.
 
-## Publish
+## Uploading to GitHub Pages
+Upload the contents of this folder into the **root** of the `old-vicarage-concierge` repository, replacing the previous files. Keep the `assets` folder structure intact.
 
-Upload every file and folder in this package to the root of the `old-vicarage-concierge` GitHub repository, replacing the existing versions when prompted. Commit to `main`; GitHub Pages will update automatically.
-
-## Included videos
-
-- Cinema room quick start
-- Coffee machine instructions
-- Piano instructions
-
-All three have been compressed to remain below GitHub's 100 MB per-file limit.
-
-## Privacy
-
-Do not add Wi-Fi passwords, key-safe codes, alarm codes or private telephone numbers to this public repository. Put those details directly on the property iPad or use a protected private service later.
+This version adds a redesigned cinematic homepage and a curated Explore the Western Lakes section with external links.
