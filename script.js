@@ -1,10 +1,4 @@
-document.querySelectorAll('[data-target]').forEach((button) => {
-  button.addEventListener('click', () => {
-    const section = document.getElementById(button.dataset.target);
-    section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-
-document.getElementById('backToTop')?.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+const menuButton=document.querySelector('.menu-button');const menu=document.querySelector('.menu');menuButton?.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open))});menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));
+const dialog=document.getElementById('videoDialog');const video=document.getElementById('guideVideo');const title=document.getElementById('videoTitle');document.querySelectorAll('.play-video').forEach(btn=>btn.addEventListener('click',()=>{video.src=btn.dataset.video;title.textContent=btn.dataset.title||'Video guide';dialog.showModal();video.play().catch(()=>{})}));document.getElementById('closeVideo')?.addEventListener('click',()=>{video.pause();video.removeAttribute('src');video.load();dialog.close()});dialog?.addEventListener('click',e=>{if(e.target===dialog){video.pause();video.removeAttribute('src');video.load();dialog.close()}});
+const checks=[...document.querySelectorAll('#checklist input')];checks.forEach((box,i)=>{box.checked=localStorage.getItem(`departure-${i}`)==='1';box.addEventListener('change',()=>localStorage.setItem(`departure-${i}`,box.checked?'1':'0'))});
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}))}

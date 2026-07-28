@@ -1,14 +1,19 @@
-# The Old Vicarage Concierge
+# The Old Vicarage Guest Concierge — Version 2
 
-A responsive digital guest guide for The Old Vicarage, Irton.
+A touch-friendly digital concierge designed for the property iPad and guests' phones.
 
-## Publish with GitHub Pages
+## Publish
 
-1. Upload all files and the `assets` folder to the repository root.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select **main** and **/(root)**, then save.
+Upload every file and folder in this package to the root of the `old-vicarage-concierge` GitHub repository, replacing the existing versions when prompted. Commit to `main`; GitHub Pages will update automatically.
 
-## Important privacy note
+## Included videos
 
-Do not place key-safe codes, Wi-Fi passwords, alarm codes, personal phone numbers or other sensitive guest-access information in a public repository or public GitHub Pages site.
+- Cinema room quick start
+- Coffee machine instructions
+- Piano instructions
+
+All three have been compressed to remain below GitHub's 100 MB per-file limit.
+
+## Privacy
+
+Do not add Wi-Fi passwords, key-safe codes, alarm codes or private telephone numbers to this public repository. Put those details directly on the property iPad or use a protected private service later.
