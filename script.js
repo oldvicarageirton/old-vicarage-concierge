@@ -9,3 +9,14 @@ document.getElementById('closeVideo')?.addEventListener('click',()=>{video.pause
 const checks=[...document.querySelectorAll('#checklist input')];checks.forEach((c,i)=>{c.checked=localStorage.getItem(`ov-check-${i}`)==='1';c.addEventListener('change',()=>localStorage.setItem(`ov-check-${i}`,c.checked?'1':'0'));});
 document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.destination').forEach(card=>card.classList.toggle('hidden',f!=='all'&&!card.dataset.category.split(' ').includes(f)));}));
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(()=>{}));
+
+const dayoutDialog=document.getElementById('dayoutDialog');
+const dayoutStories=[...document.querySelectorAll('.dayout-story')];
+document.querySelectorAll('[data-dayout]').forEach(card=>card.addEventListener('click',()=>{
+  dayoutStories.forEach(story=>story.classList.toggle('active',story.dataset.story===card.dataset.dayout));
+  dayoutDialog?.showModal();
+  dayoutDialog?.scrollTo({top:0});
+}));
+const closeDayout=()=>{if(dayoutDialog?.open)dayoutDialog.close();};
+document.getElementById('closeDayout')?.addEventListener('click',closeDayout);
+dayoutDialog?.addEventListener('click',event=>{if(event.target===dayoutDialog)closeDayout();});

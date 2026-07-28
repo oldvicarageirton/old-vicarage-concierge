@@ -1,8 +1,5 @@
-# The Old Vicarage Guest Concierge — Version 3
+# The Old Vicarage Guest Concierge — Version 4
 
-A premium, touch-friendly guest concierge for The Old Vicarage, Irton.
+Version 4 adds **Phil & Claire’s Favourite Days Out** with five personal, full-screen stories, Google Maps directions from CA19 1YH, official visitor links and the family’s preferred cafés and restaurants.
 
-## Uploading to GitHub Pages
-Upload the contents of this folder into the **root** of the `old-vicarage-concierge` repository, replacing the previous files. Keep the `assets` folder structure intact.
-
-This version adds a redesigned cinematic homepage and a curated Explore the Western Lakes section with external links.
+Upload the contents of this folder to the root of the GitHub Pages repository, replacing the Version 3 files. Existing videos and images are included.

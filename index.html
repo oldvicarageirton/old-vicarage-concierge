@@ -81,21 +81,28 @@
 
     <section id="explore" class="explore-section section-space">
       <div class="section-shell">
-        <div class="section-heading light reveal"><p class="eyebrow">Beyond the gates</p><h2>Explore the Western Lakes.</h2><p>Six places we think deserve a place in your stay. Tap any card to open the official guide in a new tab.</p></div>
-        <div class="filter-row reveal" aria-label="Filter recommendations">
-          <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="family">Family days</button><button class="filter" data-filter="walks">Walks</button><button class="filter" data-filter="coast">Coast</button><button class="filter" data-filter="adventure">Adventure</button>
+        <div class="section-heading light reveal"><p class="eyebrow">Through our family’s eyes</p><h2>Phil &amp; Claire’s favourite days out.</h2><p>Places we have returned to as a couple and as a family — the walks, little traditions and local stops that have made our own memories in the Western Lakes.</p></div>
+        <div class="filter-row reveal" aria-label="Filter favourite days out">
+          <button class="filter active" data-filter="all">All favourites</button><button class="filter" data-filter="family">Family</button><button class="filter" data-filter="scenic">Scenic</button><button class="filter" data-filter="heritage">Heritage</button><button class="filter" data-filter="hidden">Hidden gem</button><button class="filter" data-filter="coast">Coast</button>
         </div>
-        <div class="explore-grid">
-          <a class="destination destination-wide reveal" data-category="family walks" href="https://lakedistrict.gov.uk/explore/places-to-go/explore-wasdale-wastwater-and-west-coast/" target="_blank" rel="noopener">
-            <img src="assets/images/explore/wasdale-wastwater.webp" alt="Wastwater surrounded by dramatic Lake District fells"><div class="destination-shade"></div><div class="destination-copy"><p>Landscape · Walks</p><h3>Wasdale &amp; Wastwater</h3><span>Explore the valley →</span></div>
-          </a>
-          <a class="destination reveal" data-category="family" href="https://www.muncaster.co.uk/" target="_blank" rel="noopener"><img src="assets/images/explore/muncaster-castle.webp" alt="Aerial view of Muncaster Castle and gardens"><div class="destination-shade"></div><div class="destination-copy"><p>Family day out</p><h3>Muncaster Castle</h3><span>Plan your visit →</span></div></a>
-          <a class="destination reveal" data-category="family" href="https://ravenglass-railway.co.uk/" target="_blank" rel="noopener"><img src="assets/images/explore/ravenglass-railway.webp" alt="Aerial view of Ravenglass and its railway station"><div class="destination-shade"></div><div class="destination-copy"><p>Heritage railway</p><h3>Ravenglass &amp; Eskdale Railway</h3><span>View timetable →</span></div></a>
-          <a class="destination reveal" data-category="coast family" href="https://www.thebeachguide.co.uk/north-west-england/cumbria/seascale.htm" target="_blank" rel="noopener"><img src="assets/images/explore/seascale-beach.webp" alt="Seascale Beach looking across the Irish Sea"><div class="destination-shade"></div><div class="destination-copy"><p>Coast · Sunset</p><h3>Seascale Beach</h3><span>View beach guide →</span></div></a>
-          <a class="destination reveal" data-category="walks adventure" href="https://lakedistrict.gov.uk/explore/things-to-do/walking/walking-routes/scafell-pike/" target="_blank" rel="noopener"><img src="assets/images/explore/scafell-pike.webp" alt="Rocky mountain scenery around Scafell Pike"><div class="destination-shade"></div><div class="destination-copy"><p>Challenging mountain day</p><h3>Scafell Pike</h3><span>Plan the walk →</span></div></a>
-          <a class="destination destination-wide reveal" data-category="walks adventure" href="https://lifehop.co.uk/wasdale-emerald-pool/" target="_blank" rel="noopener"><img src="assets/images/explore/emerald-pool.webp" alt="Clear emerald mountain pool and waterfalls in Wasdale"><div class="destination-shade"></div><div class="destination-copy"><p>Adventure · Wild landscape</p><h3>Wasdale Emerald Pool</h3><span>Read the guide →</span></div></a>
+        <div class="explore-grid favourites-grid">
+          <button class="destination favourite-card reveal" data-category="family" data-dayout="muncaster" aria-label="Open Muncaster Castle recommendation">
+            <img src="assets/images/explore/muncaster-castle.webp" alt="Muncaster Castle"><div class="destination-shade"></div><div class="destination-copy"><p>Best family day out</p><h3>Muncaster Castle</h3><span>Discover why we love it →</span></div>
+          </button>
+          <button class="destination favourite-card reveal" data-category="scenic" data-dayout="wastwater" aria-label="Open Wastwater recommendation">
+            <img src="assets/images/explore/wasdale-wastwater.webp" alt="Wastwater"><div class="destination-shade"></div><div class="destination-copy"><p>Best scenic day out</p><h3>Wastwater</h3><span>Discover why we love it →</span></div>
+          </button>
+          <button class="destination favourite-card reveal" data-category="heritage" data-dayout="railway" aria-label="Open The La’al Ratty recommendation">
+            <img src="assets/images/explore/ravenglass-railway.webp" alt="The La’al Ratty"><div class="destination-shade"></div><div class="destination-copy"><p>Best heritage journey</p><h3>The La’al Ratty</h3><span>Discover why we love it →</span></div>
+          </button>
+          <button class="destination favourite-card reveal" data-category="hidden" data-dayout="emerald" aria-label="Open Emerald Pools recommendation">
+            <img src="assets/images/explore/emerald-pool.webp" alt="Emerald Pools"><div class="destination-shade"></div><div class="destination-copy"><p>Our hidden gem</p><h3>Emerald Pools</h3><span>Discover why we love it →</span></div>
+          </button>
+          <button class="destination favourite-card reveal" data-category="coast" data-dayout="seascale" aria-label="Open Seascale Beach recommendation">
+            <img src="assets/images/explore/seascale-beach.webp" alt="Seascale Beach"><div class="destination-shade"></div><div class="destination-copy"><p>Best seaside afternoon</p><h3>Seascale Beach</h3><span>Discover why we love it →</span></div>
+          </button>
         </div>
-        <p class="safety-note reveal"><strong>A gentle reminder:</strong> conditions in the fells and water can change quickly. Please check current guidance, weather and your group’s ability before setting out.</p>
+        <p class="safety-note reveal"><strong>Please take care:</strong> weather, lake levels, tides and fell conditions can change quickly. Check current local guidance and choose activities suitable for everyone in your group.</p>
       </div>
     </section>
 
@@ -123,6 +130,79 @@
 
   <nav class="bottom-nav" aria-label="iPad quick navigation"><a href="#home"><span>⌂</span>Home</a><a href="#enjoy"><span>◇</span>House</a><a href="#explore"><span>⌁</span>Explore</a><a href="#help"><span>☎</span>Help</a></nav>
   <dialog id="videoDialog" class="video-dialog"><div class="video-dialog-bar"><h2 id="videoTitle">Video guide</h2><button id="closeVideo" aria-label="Close video">×</button></div><video id="guideVideo" controls playsinline preload="metadata"></video></dialog>
+  <dialog id="dayoutDialog" class="dayout-dialog" aria-labelledby="dayoutDialogTitle">
+    <div class="dayout-dialog-bar"><span id="dayoutDialogTitle">Phil &amp; Claire recommend</span><button id="closeDayout" aria-label="Close recommendation">×</button></div>
+      <article class="dayout-story" data-story="muncaster">
+        <img class="dayout-hero" src="assets/images/explore/muncaster-castle.webp" alt="Muncaster Castle">
+        <div class="dayout-body">
+          <p class="eyebrow dark">Best family day out</p><h2>Muncaster Castle</h2>
+          <p class="dayout-intro">One of our absolute favourite days out. Muncaster is full of fascinating and magical things to discover, with something for every generation. The gardens are beautiful, the castle is magnificent and the birds of prey display is genuinely unforgettable. Allow a full day so you can enjoy it without rushing.</p>
+          <div class="host-tip"><span>Phil &amp; Claire’s tip</span><p>Check the display times when you arrive and plan your day around the birds of prey show — it is the highlight for us.</p></div>
+          
+          <div class="dayout-actions">
+            <a class="button primary" href="https://www.google.com/maps/dir/?api=1&origin=The%20Old%20Vicarage%2C%20Irton%2C%20Holmrook%20CA19%201YH&destination=Muncaster%20Castle%2C%20Ravenglass%20CA18%201RQ&travelmode=driving" target="_blank" rel="noopener">Get directions</a>
+            <a class="button outline" href="https://www.muncaster.co.uk/" target="_blank" rel="noopener">Official guide</a>
+          </div>
+          <p class="route-note">Directions start from The Old Vicarage, CA19 1YH, and open in Google Maps.</p>
+        </div>
+      </article>
+      <article class="dayout-story" data-story="wastwater">
+        <img class="dayout-hero" src="assets/images/explore/wasdale-wastwater.webp" alt="Wastwater">
+        <div class="dayout-body">
+          <p class="eyebrow dark">Best scenic day out</p><h2>Wastwater</h2>
+          <p class="dayout-intro">Wastwater is magnificent. We love parking just before YHA Wasdale Hall, on the right-hand grass verge, where a discreet public footpath leads through the woodland to the boathouse and a quiet pebble beach. It is a beautiful place to sit by the water, swim in the invigorating lake or paddleboard across its narrowest part.</p>
+          <div class="host-tip"><span>Phil &amp; Claire’s tip</span><p>Visit early in the morning or later in the day, when it is quieter and the light over the fells is at its best. Afterwards, stop for lunch at the Sawmill and sit on the veranda beside the river.</p></div>
+          <div class="dayout-eat"><span>Where we stop</span><strong>The Sawmill Café & Restaurant</strong><a href="https://www.wasdalesawmill.com/" target="_blank" rel="noopener">Visit website →</a></div>
+          <div class="dayout-actions">
+            <a class="button primary" href="https://www.google.com/maps/dir/?api=1&origin=The%20Old%20Vicarage%2C%20Irton%2C%20Holmrook%20CA19%201YH&destination=YHA%20Wasdale%20Hall%2C%20Nether%20Wasdale%2C%20Seascale%20CA20%201ET&travelmode=driving" target="_blank" rel="noopener">Get directions</a>
+            <a class="button outline" href="https://lakedistrict.gov.uk/explore/places-to-go/explore-wasdale-wastwater-and-west-coast/" target="_blank" rel="noopener">Official guide</a>
+          </div>
+          <p class="route-note">Directions start from The Old Vicarage, CA19 1YH, and open in Google Maps.</p>
+        </div>
+      </article>
+      <article class="dayout-story" data-story="railway">
+        <img class="dayout-hero" src="assets/images/explore/ravenglass-railway.webp" alt="The La’al Ratty">
+        <div class="dayout-body">
+          <p class="eyebrow dark">Best heritage journey</p><h2>The La’al Ratty</h2>
+          <p class="dayout-intro">This little railway holds many happy family memories for us. We used to drive to Eskdale, board an open carriage at Dalegarth and ride down to Ravenglass — while one of our little ones, not so little now, tried to throw his dummies from the train. At Ravenglass we would stop for coffee and ice cream, explore the village and museum, and let the children play in the park.</p>
+          <div class="host-tip"><span>Phil &amp; Claire’s tip</span><p>Choose an open carriage when the weather is kind. Take your time in Ravenglass, then catch the train back to Eskdale and finish the day with an evening meal at The Boot Inn.</p></div>
+          <div class="dayout-eat"><span>Where we stop</span><strong>The Boot Inn, Eskdale</strong><a href="http://www.thebooteskdale.co.uk/new/" target="_blank" rel="noopener">Visit website →</a></div>
+          <div class="dayout-actions">
+            <a class="button primary" href="https://www.google.com/maps/dir/?api=1&origin=The%20Old%20Vicarage%2C%20Irton%2C%20Holmrook%20CA19%201YH&destination=Dalegarth%20Station%2C%20Boot%2C%20Holmrook%20CA19%201TF&travelmode=driving" target="_blank" rel="noopener">Get directions</a>
+            <a class="button outline" href="https://ravenglass-railway.co.uk/" target="_blank" rel="noopener">Official guide</a>
+          </div>
+          <p class="route-note">Directions start from The Old Vicarage, CA19 1YH, and open in Google Maps.</p>
+        </div>
+      </article>
+      <article class="dayout-story" data-story="emerald">
+        <img class="dayout-hero" src="assets/images/explore/emerald-pool.webp" alt="Emerald Pools">
+        <div class="dayout-body">
+          <p class="eyebrow dark">Our hidden gem</p><h2>Emerald Pools</h2>
+          <p class="dayout-intro">We only discovered the Emerald Pools recently, but they are something to marvel over. On the way, call into St Olaf’s Church, often described as England’s smallest parish church. The walk beneath Great Gable is surrounded by stunning scenery and is not too strenuous for reasonably active guests.</p>
+          <div class="host-tip"><span>Phil &amp; Claire’s tip</span><p>Take sturdy footwear and a towel. On a warm, sunny day, the crystal-clear emerald water is extremely difficult to resist — though it will still feel wonderfully fresh.</p></div>
+          
+          <div class="dayout-actions">
+            <a class="button primary" href="https://www.google.com/maps/dir/?api=1&origin=The%20Old%20Vicarage%2C%20Irton%2C%20Holmrook%20CA19%201YH&destination=St%20Olaf%27s%20Church%2C%20Wasdale%20Head%2C%20Seascale%20CA20%201EX&travelmode=driving" target="_blank" rel="noopener">Get directions</a>
+            <a class="button outline" href="https://lifehop.co.uk/wasdale-emerald-pool/" target="_blank" rel="noopener">Official guide</a>
+          </div>
+          <p class="route-note">Directions start from The Old Vicarage, CA19 1YH, and open in Google Maps.</p>
+        </div>
+      </article>
+      <article class="dayout-story" data-story="seascale">
+        <img class="dayout-hero" src="assets/images/explore/seascale-beach.webp" alt="Seascale Beach">
+        <div class="dayout-body">
+          <p class="eyebrow dark">Best seaside afternoon</p><h2>Seascale Beach</h2>
+          <p class="dayout-intro">Late afternoon often takes us to Seascale, when the tide is perfect for rock pools, kite flying and a paddle in the sea. The beach seems endless, and you can walk all the way towards the sand dunes at Drigg. It is a fantastic place for dogs and almost guarantees that both the children and the dog will sleep well that evening.</p>
+          <div class="host-tip"><span>Phil &amp; Claire’s tip</span><p>Pop into Mawson’s for waffles, ice cream, cakes or sandwiches. For a proper seaside supper, stop at Salt for local fish and chips before heading back to the house.</p></div>
+          <div class="dayout-eat"><span>Where we stop</span><strong>Mawson’s or Salt Fish &amp; Chips</strong><div class="inline-links"><a href="https://www.mawsons.uk/" target="_blank" rel="noopener">Mawson’s website</a><a href="https://www.saltfishandchips.co.uk/" target="_blank" rel="noopener">Salt website</a></div></div>
+          <div class="dayout-actions">
+            <a class="button primary" href="https://www.google.com/maps/dir/?api=1&origin=The%20Old%20Vicarage%2C%20Irton%2C%20Holmrook%20CA19%201YH&destination=Seascale%20Beach%2C%20Seascale%20CA20%201PU&travelmode=driving" target="_blank" rel="noopener">Get directions</a>
+            <a class="button outline" href="https://www.thebeachguide.co.uk/north-west-england/cumbria/seascale.htm" target="_blank" rel="noopener">Official guide</a>
+          </div>
+          <p class="route-note">Directions start from The Old Vicarage, CA19 1YH, and open in Google Maps.</p>
+        </div>
+      </article>
+  </dialog>
   <footer><img src="assets/logo.jpg" alt=""><p>The Old Vicarage · Irton</p><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>
