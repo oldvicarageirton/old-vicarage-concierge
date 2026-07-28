@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102b49">
+  <title>The Old Vicarage Concierge</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <img class="logo" src="assets/logo.jpg" alt="The Old Vicarage, Irton">
+    <p class="eyebrow">Your digital guest companion</p>
+    <h1>Welcome to The Old Vicarage</h1>
+    <p class="intro">Everything you need for a relaxed and memorable stay in the western Lake District.</p>
+  </header>
+
+  <main>
+    <section class="quick-grid" aria-label="Guest guide sections">
+      <button class="card" data-target="welcome"><span>🏡</span><strong>Welcome</strong><small>A note from Phil & Claire</small></button>
+      <button class="card" data-target="wifi"><span>📶</span><strong>Wi‑Fi</strong><small>Connect to the house network</small></button>
+      <button class="card" data-target="videos"><span>▶️</span><strong>Video Guides</strong><small>Simple how-to demonstrations</small></button>
+      <button class="card" data-target="house"><span>🔑</span><strong>House Guide</strong><small>Rules and practical information</small></button>
+      <button class="card" data-target="explore"><span>🥾</span><strong>Explore</strong><small>Places to visit nearby</small></button>
+      <button class="card" data-target="eat"><span>🍽️</span><strong>Eat & Drink</strong><small>Local favourites</small></button>
+      <button class="card" data-target="departure"><span>🧳</span><strong>Departure</strong><small>Your check-out checklist</small></button>
+      <button class="card" data-target="help"><span>☎️</span><strong>Need Help?</strong><small>Contacts and emergencies</small></button>
+    </section>
+
+    <section id="welcome" class="panel">
+      <div class="panel-heading"><span>🏡</span><div><p class="eyebrow">Welcome</p><h2>Make yourselves at home</h2></div></div>
+      <p>We are Phil and Claire, the owners of The Old Vicarage. We created this home as a special place for families, friends and colleagues to relax and enjoy this beautiful part of the Lake District.</p>
+      <p>We hope you have an amazing stay. Please use this guide whenever you need help with the house or ideas for your visit.</p>
+    </section>
+
+    <section id="wifi" class="panel">
+      <div class="panel-heading"><span>📶</span><div><p class="eyebrow">Wi‑Fi</p><h2>Get connected</h2></div></div>
+      <div class="notice secure"><strong>Keep private details out of a public website.</strong><br>The network name and password can be added to the iPad locally, or shown behind a guest-only access method later.</div>
+      <div class="detail-row"><span>Network</span><strong>Ask your host / see the iPad note</strong></div>
+      <div class="detail-row"><span>Password</span><strong>Private</strong></div>
+    </section>
+
+    <section id="videos" class="panel">
+      <div class="panel-heading"><span>▶️</span><div><p class="eyebrow">Video Guides</p><h2>Tap, watch and carry on</h2></div></div>
+      <div class="video-grid">
+        <article class="video-card"><div class="video-placeholder">▶</div><h3>Hot tub</h3><p>How to open, operate and secure the cover.</p></article>
+        <article class="video-card"><div class="video-placeholder">▶</div><h3>Cinema room</h3><p>Turning on the system and choosing what to watch.</p></article>
+        <article class="video-card"><div class="video-placeholder">▶</div><h3>Kitchen appliances</h3><p>Ovens, dishwasher and coffee machine.</p></article>
+        <article class="video-card"><div class="video-placeholder">▶</div><h3>Heating</h3><p>Adjusting the temperature comfortably.</p></article>
+        <article class="video-card"><div class="video-placeholder">▶</div><h3>EV charger</h3><p>A quick guide for electric vehicles.</p></article>
+        <article class="video-card"><div class="video-placeholder">▶</div><h3>Recycling</h3><p>What goes where and where to leave full bags.</p></article>
+      </div>
+    </section>
+
+    <section id="house" class="panel">
+      <div class="panel-heading"><span>🔑</span><div><p class="eyebrow">House Guide</p><h2>A few important details</h2></div></div>
+      <div class="rules">
+        <article><h3>No smoking or vaping</h3><p>Please keep the whole house smoke- and vape-free.</p></article>
+        <article><h3>Pets</h3><p>Please keep pets downstairs and off soft furnishings.</p></article>
+        <article><h3>Hot tub</h3><p>Use the plastic glasses provided and secure the cover whenever the tub is not in use.</p></article>
+        <article><h3>Kitchen</h3><p>Use the cork protectors for hot pans and the supplied oven sheets when cooking.</p></article>
+        <article><h3>Waste and recycling</h3><p>Separate cans, glass and plastics. Put full bags in the appropriate outside bin or storage unit.</p></article>
+        <article><h3>Breakages</h3><p>Please report any breakage, however small, so it can be replaced for the next guests.</p></article>
+      </div>
+    </section>
+
+    <section id="explore" class="panel">
+      <div class="panel-heading"><span>🥾</span><div><p class="eyebrow">Explore</p><h2>Nearby highlights</h2></div></div>
+      <div class="recommendations">
+        <article><h3>Seascale Beach</h3><p>A broad sandy beach, good for rock-pooling and picnics.</p></article>
+        <article><h3>Muncaster Castle</h3><p>Historic castle, gardens, woodland and bird displays.</p></article>
+        <article><h3>Ravenglass Railway</h3><p>A memorable narrow-gauge railway journey through the Eskdale landscape.</p></article>
+        <article><h3>Wast Water</h3><p>Dramatic views, waterside walks and outdoor activities.</p></article>
+        <article><h3>Scafell Pike</h3><p>A demanding mountain day for properly prepared walkers.</p></article>
+        <article><h3>Eskdale Golf Course</h3><p>An 18-hole parkland course in the Eskdale valley.</p></article>
+      </div>
+    </section>
+
+    <section id="eat" class="panel">
+      <div class="panel-heading"><span>🍽️</span><div><p class="eyebrow">Eat & Drink</p><h2>Local favourites</h2></div></div>
+      <div class="recommendations">
+        <article><h3>The Bridge Inn</h3><p>Country inn in Santon Bridge serving home-cooked food and real ales.</p></article>
+        <article><h3>The Boot Inn</h3><p>A welcoming Eskdale pub and restaurant.</p></article>
+        <article><h3>Bower House Inn</h3><p>A historic coaching inn with food, local ales and garden room.</p></article>
+        <article><h3>The Sawmill</h3><p>Riverside food, refreshments and a farm shop.</p></article>
+        <article><h3>Salt Fish & Chips</h3><p>Fish and chips by Seascale beach.</p></article>
+        <article><h3>Mawsons</h3><p>Lunch, coffee and ice cream at Seascale.</p></article>
+      </div>
+    </section>
+
+    <section id="departure" class="panel">
+      <div class="panel-heading"><span>🧳</span><div><p class="eyebrow">Departure</p><h2>Before 10:00</h2></div></div>
+      <ul class="checklist">
+        <li><label><input type="checkbox"> Put waste and recycling in the outside bins.</label></li>
+        <li><label><input type="checkbox"> Strip used bedding and place bedding and towels in the laundry bags.</label></li>
+        <li><label><input type="checkbox"> Close all windows.</label></li>
+        <li><label><input type="checkbox"> Load the dishwasher and turn it on.</label></li>
+        <li><label><input type="checkbox"> Turn off the lights.</label></li>
+        <li><label><input type="checkbox"> Check for personal belongings.</label></li>
+        <li><label><input type="checkbox"> Lock the house and return the key as instructed.</label></li>
+      </ul>
+    </section>
+
+    <section id="help" class="panel">
+      <div class="panel-heading"><span>☎️</span><div><p class="eyebrow">Help</p><h2>We're here when you need us</h2></div></div>
+      <p>Host and access details should not be published openly in a public GitHub repository. We can add tap-to-call buttons once we choose a private way to supply them.</p>
+      <div class="notice"><strong>Emergency:</strong> call 999 in the UK for police, fire, ambulance or coastguard when there is immediate danger.</div>
+      <p><strong>Property address:</strong><br>The Old Vicarage<br>Holmrook, Cumbria<br>CA19 1YH</p>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.jpg" alt="" aria-hidden="true">
+    <p>The Old Vicarage · Irton</p>
+    <button id="backToTop">Back to top ↑</button>
+  </footer>
+</body>
+</html>
