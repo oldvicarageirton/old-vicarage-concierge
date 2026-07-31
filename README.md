@@ -1,11 +1,14 @@
 # The Old Vicarage Concierge — Version 5
 
-GitHub Pages-ready build.
+GitHub Pages-ready release.
 
-## New in Version 5
-- Games & Entertainment section using the real games-room photograph
-- Video guides for the Cinema, Star Wars Arcade, Digital Jukebox and Quiz Machine
-- Complete “Looking After The Old Vicarage” guide with all house guidance rewritten in a warm guest-friendly tone
-- Updated navigation and offline cache
+## Included in this release
+- Games & Entertainment hero using the professional games-room photograph
+- Video guides for the cinema, arcade machine, digital jukebox and quiz machine
+- Table-football quick guidance
+- “Looking After The Old Vicarage” with all guest guidance presented warmly
+- Phil & Claire’s favourite days out
+- iPad-friendly navigation and offline service worker
 
-Upload the contents of this folder to the root of the GitHub repository.
+## Upload to GitHub
+Extract this ZIP, then upload **all files and folders inside the extracted folder** to the root of the repository. `index.html` must sit at repository root beside `assets`, `styles.css`, `script.js`, `service-worker.js` and `manifest.webmanifest`.
