@@ -1,5 +1,11 @@
-# The Old Vicarage Guest Concierge — Version 4
+# The Old Vicarage Concierge — Version 5
 
-Version 4 adds **Phil & Claire’s Favourite Days Out** with five personal, full-screen stories, Google Maps directions from CA19 1YH, official visitor links and the family’s preferred cafés and restaurants.
+GitHub Pages-ready build.
 
-Upload the contents of this folder to the root of the GitHub Pages repository, replacing the Version 3 files. Existing videos and images are included.
+## New in Version 5
+- Games & Entertainment section using the real games-room photograph
+- Video guides for the Cinema, Star Wars Arcade, Digital Jukebox and Quiz Machine
+- Complete “Looking After The Old Vicarage” guide with all house guidance rewritten in a warm guest-friendly tone
+- Updated navigation and offline cache
+
+Upload the contents of this folder to the root of the GitHub repository.
