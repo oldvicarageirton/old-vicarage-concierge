@@ -202,7 +202,7 @@ box-shadow:
 
 .kitchen-section {
   background:
-    linear-gradient(145deg, #f6f0e5 0%, #fbf8f1 55%, #eee4d4 100%);
+    linear-gradient(145deg, #f4f3ed 0%, #fbfaf6 55%, #e9eeea 100%);
 }
 
 .kitchen-hero {
@@ -265,29 +265,29 @@ box-shadow:
   align-items: flex-start;
   min-height: 295px;
   padding: 32px;
-  background: rgba(255, 255, 255, 0.92);
+
+  background: #ffffff;
   border: 1px solid #ded3c1;
   border-radius: 22px;
-  box-shadow: 0 15px 42px rgba(18, 40, 42, 0.07);
+
+  box-shadow: 0 12px 32px rgba(23, 59, 58, 0.08);
+
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .appliance-card:hover,
 .appliance-card:focus-visible {
-    transform: translateY(-6px);
-
-    border-color: rgba(22, 73, 61, 0.65);
-
-    box-shadow:
-        0 24px 60px rgba(22, 73, 61, 0.20);
-
-    transition: all .25s ease;
+  transform: translateY(-6px);
+  border-color: rgba(23, 59, 58, 0.72);
+  box-shadow: 0 24px 55px rgba(12, 32, 35, 0.22);
+  outline: none;
 }
 
 .appliance-number {
-  color: #9a6b2f;
+  color: var(--forest);
   font-size: 0.73rem;
   font-weight: 900;
   letter-spacing: 0.18em;
