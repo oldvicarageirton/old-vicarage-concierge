@@ -55,8 +55,9 @@
 .quick-grid-seven .quick-card:hover,
 .quick-grid-seven .quick-card:focus-visible {
   transform: translateY(-6px);
-  border-color: rgba(200, 154, 86, 0.65);
-  box-shadow: 0 24px 60px rgba(18, 40, 42, 0.15);
+  border-color: rgba(18, 74, 68, 0.55);
+box-shadow:
+0 22px 60px rgba(18,74,68,0.18);
 }
 
 .quick-grid-seven .quick-icon {
@@ -273,9 +274,16 @@
     box-shadow 0.25s ease;
 }
 
-.appliance-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 25px 65px rgba(18, 40, 42, 0.14);
+.appliance-card:hover,
+.appliance-card:focus-visible {
+    transform: translateY(-6px);
+
+    border-color: rgba(22, 73, 61, 0.65);
+
+    box-shadow:
+        0 24px 60px rgba(22, 73, 61, 0.20);
+
+    transition: all .25s ease;
 }
 
 .appliance-number {
