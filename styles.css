@@ -556,3 +556,95 @@ box-shadow:
     grid-template-columns: 1fr;
   }
 }
+/* Heating + Lighting control cards */
+
+.controls-section .section-shell {
+  max-width: 1180px;
+}
+
+.control-guide {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+
+  margin-top: 34px;
+  padding: 0;
+
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.control-guide-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  min-height: 520px;
+  padding: 34px;
+
+  background: #fff;
+  border: 1px solid rgba(23, 59, 58, 0.14);
+  border-radius: 26px;
+
+  box-shadow:
+    0 18px 42px rgba(12, 22, 24, 0.10);
+}
+
+.control-app-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 210px;
+  margin-bottom: 24px;
+}
+
+.control-app-image img {
+  width: 180px;
+  height: 180px;
+
+  object-fit: contain;
+  border-radius: 24px;
+
+  box-shadow:
+    0 12px 28px rgba(12, 22, 24, 0.10);
+}
+
+.control-guide-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  width: 100%;
+  max-width: none;
+}
+
+.control-guide-copy h3 {
+  margin: 8px 0 14px;
+
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.08;
+}
+
+.control-guide-copy > p:not(.eyebrow) {
+  margin: 0 0 24px;
+
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.control-guide-copy .button {
+  margin-top: auto;
+}
+
+@media (max-width: 800px) {
+  .control-guide {
+    grid-template-columns: 1fr;
+  }
+
+  .control-guide-card {
+    min-height: auto;
+  }
+}
