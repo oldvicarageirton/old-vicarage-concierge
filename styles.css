@@ -648,3 +648,71 @@ box-shadow:
     min-height: auto;
   }
 }
+/* Comfort & Controls · spacing refinement */
+
+.controls-section .section-shell {
+  width: min(1120px, calc(100% - 48px));
+  max-width: 1120px;
+}
+
+.control-guide {
+  width: 100%;
+  max-width: 1040px;
+  margin: 46px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px;
+}
+
+.control-guide-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 500px;
+
+  padding: 38px 40px;
+
+  background: #fff;
+  border: 1px solid rgba(23, 59, 58, 0.14);
+  border-radius: 26px;
+
+  box-shadow:
+    0 18px 42px rgba(12, 22, 24, 0.10);
+}
+
+.control-app-image {
+  width: 100%;
+  min-height: 185px;
+  margin-bottom: 28px;
+}
+
+.control-app-image img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+.control-guide-copy h3 {
+  margin: 8px 0 16px;
+  font-size: clamp(2rem, 2.6vw, 2.65rem);
+  line-height: 1.08;
+}
+
+.control-guide-copy > p:not(.eyebrow) {
+  max-width: 430px;
+  margin-bottom: 28px;
+  line-height: 1.65;
+}
+
+@media (max-width: 850px) {
+  .control-guide {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    gap: 24px;
+  }
+
+  .control-guide-card {
+    min-height: auto;
+  }
+}
