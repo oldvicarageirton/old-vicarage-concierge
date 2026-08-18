@@ -876,3 +876,152 @@ box-shadow:
     min-height: auto;
   }
 }
+/* Local Amenities */
+
+.amenities-block {
+  margin-top: 90px;
+}
+
+.amenities-heading {
+  max-width: 800px;
+}
+
+.amenities-subheading {
+  margin: 52px 0 24px;
+}
+
+.amenities-subheading h3 {
+  font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.amenity-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 285px;
+  padding: 28px;
+
+  background: #fff;
+  border: 1px solid rgba(23, 59, 58, 0.14);
+  border-radius: 22px;
+
+  box-shadow:
+    0 14px 36px rgba(12, 22, 24, 0.07);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    border-color .2s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(23, 59, 58, .48);
+
+  box-shadow:
+    0 20px 44px rgba(12, 22, 24, .12);
+}
+
+.amenity-icon {
+  display: grid;
+  place-items: center;
+
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+
+  border-radius: 15px;
+
+  background: var(--forest);
+  color: #f1c98b;
+
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.amenity-card h3 {
+  margin: 0 0 5px;
+  font-size: 1.7rem;
+}
+
+.amenity-location {
+  margin: 0 0 13px !important;
+
+  color: #9a6b2f !important;
+
+  font-size: .78rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.amenity-card > p:not(.amenity-location) {
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.amenity-link {
+  display: inline-block;
+  margin-top: auto;
+
+  color: #8d602b;
+
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.amenity-link:hover {
+  color: var(--forest);
+}
+
+.amenity-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  margin-top: auto;
+}
+
+.amenity-actions .amenity-link {
+  margin-top: 0;
+}
+
+.amenity-link.secondary {
+  color: var(--forest);
+}
+
+.healthcare-heading {
+  margin-top: 70px;
+}
+
+.healthcare-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .amenities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .amenities-block {
+    margin-top: 65px;
+  }
+
+  .amenities-grid,
+  .healthcare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amenity-card {
+    min-height: auto;
+  }
+}
