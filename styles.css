@@ -1284,3 +1284,33 @@ box-shadow:
     grid-template-columns: 1fr;
   }
 }
+/* Gentle arrival note */
+
+.arrival-note {
+  max-width: 760px;
+  margin: 28px auto 38px;
+  padding: 18px 24px;
+
+  text-align: center;
+
+  background: #eef4ed;
+  border: 1px solid #cedbce;
+  border-radius: 18px;
+}
+
+.arrival-note strong,
+.arrival-note span {
+  display: block;
+}
+
+.arrival-note strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.18rem;
+  color: var(--ink);
+}
+
+.arrival-note span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
